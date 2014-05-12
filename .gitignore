@@ -1,0 +1,6 @@
+.vagrant
+cookbooks/
+tmp
+Cheffile.lock
+Gemfile.lock
+rails_app/*
