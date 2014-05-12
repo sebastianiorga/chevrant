@@ -31,10 +31,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                 },
       :rvm => {
         :default_ruby => 'ruby-2.1.0',
-        global_gems: {
+        global_gems: [{
             'name'    => 'bundler',
             'version' => '1.5.1'
-        }
+        }]
       },
       :mysql => {
         "server_root_password" => "root",
@@ -44,6 +44,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       }
     })
   end
-
-  config.vm.provision "shell", inline: "sudo chown -R vagrant /usr/local/rvm"
 end
