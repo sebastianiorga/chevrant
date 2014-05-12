@@ -1,0 +1,1 @@
+bundle, librarian-chef install, vagrant up
